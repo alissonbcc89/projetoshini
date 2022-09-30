@@ -75,6 +75,7 @@ server <- function(input, output) {
     }
   })
   
+
   
   n = reactive(length(x()))
   xbarra = reactive(mean(x()))
@@ -126,6 +127,7 @@ server <- function(input, output) {
     plot(data_frame$variavel_continua1, data_frame$variavel_continua2,
          main = "Dispersão Altura X Peso",
          xlab = "Altura", ylab = "Peso", )
+    abline(regressao)
     
   })
   
