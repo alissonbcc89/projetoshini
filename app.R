@@ -75,6 +75,7 @@ server <- function(input, output) {
     }
   })
   
+
   
   n = reactive(length(x()))
   xbarra = reactive(mean(x()))
